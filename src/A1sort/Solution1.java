@@ -1,4 +1,4 @@
-package ProgrammersSolution;
+package A1sort;
 
 import java.util.*;
 
@@ -12,7 +12,7 @@ public class Solution1 {
     }
 }
 
-class Solution {
+class Pr명예의전당 {
     public int[] solution(int k, int[] score) {
         ArrayList<Integer> answerList = new ArrayList<>();
         // score가 모두 들어있는 우선순위 큐 (내림차 순)
