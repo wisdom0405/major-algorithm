@@ -5,7 +5,7 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
 
-public class B1basic2 {
+public class B2basic2 {
     static List<List<Integer>> adjList;
     static boolean[] visited;
     static int[] distance;

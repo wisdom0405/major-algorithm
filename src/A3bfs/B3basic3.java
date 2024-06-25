@@ -2,7 +2,7 @@ package A3bfs;
 
 import java.util.*;
 
-public class B1basic3 {
+public class B3basic3 {
     static List<List<Integer>> adjList;
     static boolean[] visited;
     static int[] distance;
