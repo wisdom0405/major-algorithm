@@ -16,14 +16,14 @@ public class D3정수삼각형 {
         dp[1][0] = triangle[1][0] + triangle[0][0];
         dp[1][1] = triangle[1][1] + triangle[0][0];
 
-        // 삼각형 왼쪽 변, 오른쪽 변
+        // 삼각형 왼쪽 변
         for(int i = 2; i < triangle.length; i++) {
             dp[i][0] = triangle[i][0] + dp[i-1][0];
 //            dp[i][triangle[i].length - 1] = triangle[i][triangle[i].length - 1] + dp[i-1][triangle[i].length - 2];
             answer = Math.max(answer, dp[i][0]);
         }
 
-        // 삼각형 왼쪽 변, 오른쪽 변
+        // 삼각형 오른쪽 변
         for(int i = 2; i < triangle.length; i++) {
             dp[i][triangle[i].length - 1] = triangle[i][triangle[i].length - 1] + dp[i-1][triangle[i].length - 2];
             answer = Math.max(answer, dp[i][triangle[i].length - 1]);
